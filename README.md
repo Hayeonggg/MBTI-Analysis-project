@@ -2,7 +2,7 @@
 ## Natural Language Response-Based MBTI Analysis
 ___
 ![프레젠테이션2](https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/c8dc0bb6-4789-4b4a-a349-16acb55b89c2)
-
+<img src="[이미지주소.png](https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/c8dc0bb6-4789-4b4a-a349-16acb55b89c2)" width="200" height="400"/>
 </br>
 
 1. 데이터 수집 - 데이터 증강</br>
