@@ -11,7 +11,7 @@
 #### EXPECTANCY EFFECTS
 - 전통적인 MBTI 검사와 달리, 텍스트로 표현된 사용자 응답을 활용하여 MBTI 성격 유형 분석 및 예측
 - LSTM과 Bi-LSTM을 사용하여 5가지의 모델 제안 및 비교
-- Pre-trained Model(KoGPT-2, GPT-4)을 활용한   데이터 증강 기법 사용
+- Pre-trained Model(KoGPT-2, GPT-4)을 활용한 Data Augmentation
 - 적은 양의 데이터 셋으로도 높은 예측 정확도를 보임
 
 ___
