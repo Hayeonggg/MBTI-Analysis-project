@@ -14,13 +14,16 @@
 - Pre-trained Model(KoGPT-2, GPT-4)을 활용한 Data Augmentation
 - 적은 양의 데이터 셋으로도 높은 예측 정확도를 보임
 
-___
->
+</br>
 
 <p align="center">
 <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/c8dc0bb6-4789-4b4a-a349-16acb55b89c2" width="600" height="280"/>
 </p>
-  
+
+
+####  SYSTEM ARCHITECTURE & DEVELOPMENT ENVIRONMENT (임시)
+![image](https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/b7f6e8a1-39a2-4e8f-b472-79bdc2ec0e78)
+
 </br></br>
 
 1. 데이터 수집 - 데이터 증강</br>
