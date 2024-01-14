@@ -19,13 +19,15 @@
 - 적은 양의 데이터 셋으로도 높은 예측 정확도를 보임
 
 </br>
+
 #### Demo
 ![image](https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/68bf093c-c3e8-48a1-8a7f-63a7076a72bb)
 
 
 ####  SYSTEM ARCHITECTURE & DEVELOPMENT ENVIRONMENT (임시)
-![image](https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/b7f6e8a1-39a2-4e8f-b472-79bdc2ec0e78)
-
+<p align="center">
+  <img src="[https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/c8dc0bb6-4789-4b4a-a349-16acb55b89c2](https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/b7f6e8a1-39a2-4e8f-b472-79bdc2ec0e78)" width="600" height="280"/>
+</p>
 </br></br>
 
 1. 데이터 수집 - 데이터 증강</br>
