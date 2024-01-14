@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot Interface</title>
+    <style>
+        body { 
+            font-family: 'NanumSquare', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            background: rgba(7, 7, 7, 0.144);
+            /*background-image: url('http://localhost:5000/images/mbti_test.png');*/
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #chat-container { 
+            width: 100%; 
+            max-width: 800px; 
+            background: rgb(255, 255, 255); 
+            padding: 20px; 
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5); 
+            position: relative;
+        }
+        #title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        #chat-box { 
+            height: 400px; 
+            overflow: auto; 
+            border: 1px solid #ddd; 
+            padding: 10px; 
+            display: flex;
+            flex-direction: column;
+        }
+        .chat-message { 
+            padding: 10px; 
+            margin: 5px; 
+            border-radius: 10px; 
+            max-width: 70%; 
+            word-wrap: break-word; 
+        }
+        .bot-message { 
+            background-color: blue; 
+            color: white; 
+            border-bottom-left-radius: 0; 
+            align-self: flex-start; 
+        }
+        .user-message { 
+            background-color: grey; 
+            color: white; 
+            border-bottom-right-radius: 0; 
+            align-self: flex-end; 
+        }
+        #user-input { 
+            width: calc(100% - 100px); 
+            margin-top: 10px; 
+        }
+        #send-button { 
+            width: 90px; 
+        }
+
+        /* 막대 그래프 스타일 */
+        .mbti-bar-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* 양쪽에 여백을 줌 */
+            background-color: #ffffff; /* 배경 색상 */
+            width: 100%; /* 컨테이너의 너비를 최대로 */
+            border-radius: 5px; /* 둥근 모서리 */
+            position: relative; /* 자식 요소들을 상대적으로 배치 */
+        }
+
+        .mbti-bar {
+            height: 20px; /* 막대그래프의 높이 */
+            border-radius: 5px; /* 모서리를 둥글게 */
+            flex-grow: 1; /* 가능한 공간을 모두 차지하도록 설정 */
+        }
+
+        .percentage-label {
+            display: inline-block; /* 블록 요소처럼 표시 */
+            font-size: 12px; /* 글꼴 크기 */
+            margin-top: 4px; /* 상단 여백 */
+        }
+
+        /* 왼쪽 라벨 스타일 */
+        .left {
+            float: left; /* 왼쪽 정렬 */
+        }
+
+        /* 오른쪽 라벨 스타일 */
+        .right {
+            float: right; /* 오른쪽 정렬 */
+        }
+
+        
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // 재시작 함수
+        function restartChat() {
+            // 페이지를 다시 로드하거나 초기 상태로 되돌림
+            console.log("재시작 버튼이 클릭됨"); // 디버깅을 위한 콘솔 로그
+            window.location.reload();
+        }
+
+        
+    
+    </script>
+</head>
+<body>
+    
+
+
+    <div id="chat-container">
+        <div id="title">
+            Show me your <span style="color: blue;">'True'</span> <span style="font-weight: bold;">MBTI</span> 👀
+        </div>
+
+        <div id="chat-box">
+            <div class="chat-message bot-message" id="name-box">
+                <span style="font-weight: bold;">본인의 이름<span style="font-size:80%;">(닉네임)</span>을 적으시겠습니까?</span><br>
+                
+                <span style="font-size:70%;">('예'를 선택하시면 개인정보 수집에 자동으로 동의됩니다.<br>     
+                수집된 응답은 추후 연구에서만 사용되며 상업적인 목적으로 절대 사용되지 않습니다.)</span>
+                <button type="submit" name="yes">예</button>
+                <button type="submit" name="no">아니오</button>
+                  
+            </div>
+
+            <!-- 이름 입력란 -->
+            <div class="chat-message bot-message" id="user-name-input" style="display: none;">
+                본인의 이름이나 닉네임을 입력하세요.🌞<br>
+            </div>
+
+            <!-- 시작 메시지 -->
+            <div class="chat-message bot-message" id="start-message-box" style="display: none;"></div>
+
+            <!-- 안내사항 메시지 (초기에는 숨김) -->
+            <div class="chat-message bot-message" id="introduction-box" style="white-space: pre-wrap; display: none;">
+지금부터 당신에게 질문을 연속해서 드릴겁니다!             
+검사를 시작하기 전, 몇 가지 <span style="font-weight: bold;">주의사항</span>을 알려드리겠습니다.<br>
+ 1. 모든 응답은 <span style="font-weight: bold; color: rgb(255, 251, 0);">주관식</span>으로 답변해주세요.
+   &nbsp;&nbsp;&nbsp;<span style="font-size:80%;"> · 여러분이 지금까지 해왔던 MBTI 검사와는 다릅니다!</span><br>
+ 2. '네', '아니오'와 같은 <span style="font-weight: bold; color:red;">단답은 하지 말아주세요</span>😥
+      <span style="font-weight: bold; color:red;">음슴체, 신조어, 줄임말</span>은 <span style="font-weight: bold;">최대한 자제해주세요🙏</span>
+   &nbsp;&nbsp;&nbsp;<span style="font-size:80%;"> · 보다 정확한 검사를 위함입니다! 최대한 자세하고 명확하게 답해주세요~</span><br>
+ 3. 여러분이 생각했던 MBTI와 <span style="font-weight: bold;">검사 결과가 다를 수 있습니다.</span>
+   &nbsp;&nbsp;&nbsp;<span style="font-size:80%;"> · MBTI는 언제든지 변할 수 있는 것! 재미로만 즐겨주세요😉</span><br>
+<span style="font-weight: bold; font-size:110%;">🕵 준비가 되었다면 "Enter키"를 눌러주세요❕❕</span>
+            </div>
+                   
+            <!-- 질문 메시지  -->
+            <div class="chat-message bot-message" id="question-box"></div>
+
+            <!-- MBTI 결과 표시 영역 (초기에는 숨김) -->
+            <div id="mbti-result" style="display: none; text-align: center;">
+                <h2>🙂당신의 MBTI 결과🙃</h2>
+                <p><span style="font-size:120%;">당신의 MBTI는 <span id="mbti-type" style="font-weight: bold; color:blue; font-size:140%;" ></span>입니다!</span></p>
+                <div id="mbti-bars">
+                     <!-- E와 I 유형 -->
+                    <h3>에너지 방향</h3>
+                    <div class="mbti-bar-container">
+                        <span class="percentage-label left" id="label_type_e"></span>
+                        <div class="mbti-bar" id="bar_type_e" style="background-color: rgb(255, 101, 160);"></div>
+                        <div class="mbti-bar" id="bar_type_i" style="background-color: rgb(136, 255, 136);"></div>
+                        <span class="percentage-label right" id="label_type_i"></span>
+                    </div>
+                    <div class="type-labels">
+                        <span class="type-label left" style="font-weight: bold;">E (외향형)</span>
+                        <span class="type-label right" style="font-weight: bold;">I (내향형)</span>
+                    </div>
+                    <!-- N과 S 유형 -->
+                    <h3>인식기능</h3>
+                    <div class="mbti-bar-container">
+                        <span class="percentage-label left" id="label_type_n"></span>
+                        <div class="mbti-bar" id="bar_type_s" style="background-color: rgba(255, 101, 160);"></div>
+                        <div class="mbti-bar" id="bar_type_n" style="background-color: rgb(136, 255, 136);"></div>
+                        <span class="percentage-label right" id="label_type_s"></span>
+                    </div>
+                    <div class="type-labels">
+                        <span class="type-label left" style="font-weight: bold;">N (감각형)</span>
+                        <span class="type-label right" style="font-weight: bold;">S (직관형)</span>
+                    </div>
+                    <!-- F과 T 유형 -->
+                    <h3>판단기능</h3>
+                    <div class="mbti-bar-container">
+                        <span class="percentage-label left" id="label_type_f"></span>
+                        <div class="mbti-bar" id="bar_type_f" style="background-color: rgba(255, 101, 160);"></div>
+                        <div class="mbti-bar" id="bar_type_t" style="background-color: rgb(136, 255, 136);"></div>
+                        <span class="percentage-label right" id="label_type_t"></span>
+                    </div>
+                    <div class="type-labels">
+                        <span class="type-label left" style="font-weight: bold;">F (사고형)</span>
+                        <span class="type-label right" style="font-weight: bold;">T (감정형)</span>
+                    </div>
+                    <!-- J과 P 유형 -->
+                    <h3>생활방식</h3>
+                    <div class="mbti-bar-container">
+                        <span class="percentage-label left" id="label_type_j"></span>
+                        <div class="mbti-bar" id="bar_type_j" style="background-color: rgba(255, 101, 160);"></div>
+                        <div class="mbti-bar" id="bar_type_p" style="background-color: rgb(136, 255, 136);"></div>
+                        <span class="percentage-label right" id="label_type_p"></span>
+                    </div>
+                    <div class="type-labels">
+                        <span class="type-label left" style="font-weight: bold;">J (판단형)</span>
+                        <span class="type-label right" style="font-weight: bold;">P (인식형)</span>
+                    </div>
+                    
+                    
+                    
+                </div>
+                <button id="restart-button" style="display: none;" onclick="restartChat()">다시 검사하기</button>
+                
+            </div>
+            
+            
+        </div> 
+
+        <!-- 사용자 응답 폼 -->
+        <div style="display: flex; justify-content: center;">
+            <input type="text" id="user-input" style="height: 25px;" placeholder="메시지 입력" onkeypress="handleKeyPress(event)">
+            <button id="send-button" style="background-color: rgb(206, 207, 207);" onclick="showIntroduction()">Enter</button>
+        </div>
+        
+        
+    </div>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var startMessageBox = document.getElementById('start-message-box'); // 시작 메시지 박스
+            var introductionBox = document.getElementById('introduction-box'); // 안내사항 메시지 박스
+            var chatBox = document.getElementById('chat-box'); // 채팅 박스
+            var userInput = document.getElementById('user-input'); // 사용자 입력 필드
+            var sendButton = document.getElementById('send-button'); // 보내기 버튼
+            var questionBox = document.getElementById('question-box'); // 질문 박스
+            var isIntroductionComplete = false; // 두 번째 인트로가 표시되었는지 여부
+            var startIntroComplete = false; // 첫 번째 인트로가 표시되었는지 여부
+            var mbtiResult = document.getElementById('mbti-result');
+            var isFirstEnterPressed = false; // 사용자가 처음 엔터 키를 눌렀는지 여부를 추적하는 변수(라스트 쪽 엔터)
+            var isAskingUserMBTIpressed=false
+            var isAskingUserMBTI=false
+            
+            //타임 딜레이
+            function timeDelay(time, callback) {
+                setTimeout(callback, time);
+            }
+
+            $(document).ready(function() {
+                $('button[name="yes"]').click(function(e) {
+                    e.preventDefault();
+                    // '예' 버튼을 클릭하면 이름 입력 필드를 활성화합니다.
+                    
+                    $('#user-name-input').show();         
+                }); 
+
+                // 사용자가 엔터 키를 누를 때 'sendName' 함수를 호출합니다.
+                $('#user-name').keypress(function(e) {
+                    if (e.which == 13) { // 13은 엔터 키의 키 코드입니다.
+                        var userName = $(this).val(); // 입력받은 사용자 이름
+                        sendName();
+                    }
+                });
+
+                $('button[name="no"]').click(function(e) {
+                    e.preventDefault();
+                    $('#name-box').hide();    // 이름 입력란을 숨깁니다.
+                    document.getElementById('user-input').disabled = true; // 사용자 입력 비활성화
+                    startIntro();             // 시작 메시지 함수를 호출합니다.
+                    
+                });
+            });
+            function clearAndAddNewContent(newContent) {
+                var chatBox = document.getElementById('chat-box');
+                
+                // chat-box 내의 모든 자식 요소를 숨깁니다.
+                Array.from(chatBox.children).forEach(child => {
+                    child.style.display = 'none';
+                });
+            }  
+            
+            function startIntro(userName) {
+                    clearAndAddNewContent()
+                    //document.getElementById('user-input').disabled = true; // 사용자 입력 비활성화
+
+                    var introMessage = `<strong>안녕하세요 ${userName ? '<span style="color: pink;">' + userName + '</span>'+'님' : ''}🤗 진실된 MBTI 검사에 오신 것을 환영합니다!</strong><br><span style="font-size: 80%;">(계속하려면 "Enter키"를 눌러주세요)</span>`;
+                    document.getElementById('start-message-box').innerHTML = introMessage;
+                    document.getElementById('start-message-box').style.display = 'block';
+                    startIntroComplete = true; // 첫 번째 인트로 표시 완료
+            }
+            
+            
+
+            // 엔터 키 이벤트 리스너
+            window.addEventListener('keydown', function (event) {
+                if (event.key === 'Enter') {
+                    event.preventDefault(); // 기본 엔터 키 동작 방지
+                    handleEnterPress();
+                }
+            });
+    
+             // 엔터 키가 눌릴 때 실행되는 함수
+            function handleEnterPress() {
+                if (startIntroComplete && !isIntroductionComplete) {
+                    introductionBox.style.display = 'block'; // 안내사항 메시지 보이기
+                    isIntroductionComplete = true; // 두 번째 인트로 표시 완료
+                } else if (isIntroductionComplete && !questionBox.textContent) {
+                    // 두 번째 인트로가 완료되었고, 질문이 아직 표시되지 않았다면
+                    document.getElementById('user-input').disabled = false; // 사용자 입력 비활성화
+                    getInitialQuestion(); // 초기 질문 가져오기
+                }
+                
+            }
+            
+
+            function sendUserMBTIResponse() {
+                var userMBTI = userInput.value; // 사용자의 MBTI 응답 가져오기
+                if (userMBTI.trim() === '') {
+                    alert('응답을 입력해주세요.');
+                    return; // 빈 응답은 무시
+                }
+
+                fetch('/submit_real_mbti', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                    body: 'real_mbti=' + encodeURIComponent(userMBTI)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // 사용자 응답을 채팅 박스에 추가하고 '저장되었습니다' 메시지 표시
+                    var userMessageDiv_real = document.createElement('div');
+                    userMessageDiv_real.classList.add('chat-message', 'user-message');
+                    userMessageDiv_real.innerText = userMBTI;
+                    chatBox.appendChild(userMessageDiv_real);
+                    userInput.value = ''; // 입력 필드 초기화
+                    displayMessage("그렇군요! 즐거운 검사가 되셨길 바라겠습니다😆");
+                    document.getElementById('user-input').disabled = true;
+                    document.getElementById('restart-button').style.display = 'block'; // 재시작 버튼 표시
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+                
+                userInput.value = ''; // 입력 필드 초기화
+                document.getElementById('user-input').disabled = true;
+            }
+
+
+            
+            function send_real_mbti() {
+                var userMBTI = userInput.value; // 사용자의 MBTI 응답 가져오기
+
+                fetch('/submit_real_mbti', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                    body: 'real_mbti=' + encodeURIComponent(userMBTI)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Real MBTI response saved:', data);
+                     // 서버로부터 응답을 받은 후 '다시 검사하기' 버튼 표시
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            }
+            
+
+    
+            // 서버로부터 초기 질문 받기
+            function getInitialQuestion() {
+                fetch('/start')
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.question) {
+                            chatBox.innerHTML = ''; // 채팅 박스 비우기
+                            displayMessage(data.question); // 새로운 질문 표시
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            }
+    
+            // 메시지 표시
+            function displayMessage(message) {
+                if (!questionBox.textContent) { // 질문 박스가 비어있는 경우에만 질문 추가
+                    questionBox.textContent = message; // 질문 박스 업데이트
+                    questionBox.style.display = 'block'; // 질문 박스 보이기
+                }
+                // 채팅 메시지를 채팅 박스에 추가
+                var messageDiv = document.createElement('div');
+                messageDiv.classList.add('chat-message', 'bot-message');
+                messageDiv.textContent = message;
+                chatBox.appendChild(messageDiv);
+                chatBox.scrollTop = chatBox.scrollHeight; // 스크롤을 가장 아래로
+            }
+
+
+
+
+
+            function sendUserRequest(userResponse) {
+                // 첫 번째 요청: /user
+                fetch('/user', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: 'name=' + encodeURIComponent(userResponse)
+                }).then(response => response.json())
+                .then(data => {
+                    // 새로운 메시지 div를 생성
+                    document.getElementById('user-input').disabled = false;
+                    var messageDiv = document.createElement('div');
+                    messageDiv.classList.add('chat-message', 'bot-message');
+                    messageDiv.textContent = "저장되었습니다."; // 서버로부터의 응답 메시지
+                    
+                    document.getElementById('user-input').disabled = true; // 사용자 입력 비활성화
+                    // 메시지를 채팅 박스에 추가
+                    chatBox.appendChild(messageDiv);
+                    chatBox.scrollTop = chatBox.scrollHeight; // 채팅 박스 스크롤을 가장 아래로 이동
+                    
+                    //타임 딜레이
+                    timeDelay(2000, function() {
+                        startIntro(userResponse);
+                    })
+                    //startIntro(userResponse);
+                    
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            }
+
+            //응답 처리
+            function sendName() {
+                var userName = userInput.value; // 사용자 입력 값 가져오기
+                
+                if (userName.trim() === '') return; // 빈 응답은 무시
+
+                //사용자의 응답을 채팅 박스에 추가
+                var userMessageDiv_1 = document.createElement('div');
+                userMessageDiv_1.classList.add('chat-message', 'user-message');
+                userMessageDiv_1.innerText = userName;
+                chatBox.appendChild(userMessageDiv_1);
+
+
+                // 두 개의 독립적인 요청을 실행
+                sendUserRequest(userName);
+                
+                userInput.value = ''; // 입력 필드 초기화
+            }
+
+            
+            //두번째 응답처리
+            function sendSubmitRequest(userResponse) {
+                fetch('/submit', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                    body: 'response=' + encodeURIComponent(userResponse)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    
+                    if (data.result) {
+                        console.log(data);
+                        clearAndAddNewContent()
+
+                        // mbti-result 요소가 이미 chat-box 내에 존재하는지 확인
+                        if (!mbtiResult.parentNode || mbtiResult.parentNode.id !== 'chat-box') {
+                            chatBox.appendChild(mbtiResult); // 만약 존재하지 않는다면 추가
+                        }
+                        document.getElementById('user-input').disabled = true; // 사용자 입력 비활성화
+                    
+                        // MBTI 유형 업데이트 (예: 'ESTP')
+                        var mbtiType = data.user_mbti[0]; // '0' 키로 접근
+                        document.getElementById('mbti-type').innerText = mbtiType;
+
+                        var perE = parseFloat(data.per_1[0]).toFixed(2);
+                        var perI = (100 - perE).toFixed(2);
+                        var perN = parseFloat(data.per_2[0]).toFixed(2);
+                        var perS = (100 - perN).toFixed(2);
+                        var perF = parseFloat(data.per_3[0]).toFixed(2);
+                        var perT = (100 - perF).toFixed(2);
+                        var perJ = parseFloat(data.per_4[0]).toFixed(2);
+                        var perP = (100 - perJ).toFixed(2);
+
+                        updatePercentage('label_type_e', 'bar_type_e', perE);
+                        updatePercentage('label_type_i', 'bar_type_i', perI);
+                        updatePercentage('label_type_n', 'bar_type_n', perN);
+                        updatePercentage('label_type_s', 'bar_type_s', perS);
+                        updatePercentage('label_type_f', 'bar_type_f', perF);
+                        updatePercentage('label_type_t', 'bar_type_t', perT);
+                        updatePercentage('label_type_j', 'bar_type_j', perJ);
+                        updatePercentage('label_type_p', 'bar_type_p', perP);
+                        
+                        document.getElementById('bar_type_e').style.width = perE;
+                        document.getElementById('label_type_e').innerText = perE + '%';
+                        document.getElementById('bar_type_i').style.width = perI;
+                        document.getElementById('label_type_i').innerText = perI + '%';
+                        document.getElementById('bar_type_n').style.width = perN;
+                        document.getElementById('label_type_n').innerText = perN + '%';
+                        document.getElementById('bar_type_s').style.width = perS;
+                        document.getElementById('label_type_s').innerText = perS + '%';
+                        document.getElementById('bar_type_f').style.width = perF;
+                        document.getElementById('label_type_f').innerText = perF + '%';
+                        document.getElementById('bar_type_f').style.width = perT;
+                        document.getElementById('label_type_t').innerText = perT + '%';
+                        document.getElementById('bar_type_p').style.width = perJ;
+                        document.getElementById('label_type_j').innerText = perJ + '%';
+                        document.getElementById('bar_type_j').style.width = perP;
+                        document.getElementById('label_type_p').innerText = perP + '%';
+
+                        chatBox.scrollTop = chatBox.scrollHeight;
+                        document.getElementById('mbti-result').style.display = 'block';
+
+                        // MBTI 결과 표시 후 사용자의 실제 MBTI를 묻는 질문 표시
+                        isAskingUserMBTI = true;
+                        //displayUserMBTIQuestion();
+                        
+
+                        
+                        
+
+
+                        
+
+
+                    } else {
+                        // 다음 질문을 받은 경우
+                        console.log('Result is false'); // result 값이 true일 때 로깅
+                        chatBox.scrollTop = chatBox.scrollHeight; // 채팅 박스 스크롤을 가장 아래로 이동
+                        displayMessage(data.question); // 새로운 질문 표시
+                    }
+                    // '다시 검사하기' 버튼 표시
+                    //document.getElementById('restart-button').style.display = 'block';
+                })
+                .catch(error => console.error('Error:', error));
+            }
+
+            function updatePercentage(id, barId, percentage) {
+                document.getElementById(id).innerText = percentage + '%';
+                var bar = document.getElementById(barId);
+                bar.style.width = percentage + '%';
+            }
+            
+
+            function displayUserMBTIQuestion() {
+                clearAndAddNewContent();
+                document.getElementById('user-input').disabled = false; // 사용자 입력 활성화
+                var question_your_mbti = "본인의 MBTI는 무엇이었나요?";
+                displayMessage(question_your_mbti); // 질문을 채팅 박스에 표시
+                isAskingUserMBTIpressed = true;
+            }
+
+            
+            
+
+
+            //응답 처리
+            function sendResponse() {
+                var userResponse = userInput.value; // 사용자 입력 값 가져오기
+                
+                if (userResponse.trim() === '') return; // 빈 응답은 무시
+
+                //사용자의 응답을 채팅 박스에 추가
+                var userMessageDiv = document.createElement('div');
+                userMessageDiv.classList.add('chat-message', 'user-message');
+                userMessageDiv.innerText = userResponse;
+                chatBox.appendChild(userMessageDiv);
+
+
+                sendSubmitRequest(userResponse);
+                chatBox.scrollTop = chatBox.scrollHeight; // 스크롤을 가장 아래로
+                
+
+                userInput.value = ''; // 입력 필드 초기화
+            }
+            function handleSendButtonClick() {
+                if ($('#user-name-input').is(':visible')) {
+                    sendName(); // 이름 입력란이 보이는 경우, 이름을 처리하는 함수 호출
+                }  else if (isAskingUserMBTI) {
+                    
+                    //displayUserMBTIQuestion();
+                    sendUserMBTIResponse();
+                    document.getElementById('restart-button').style.display = 'block'; // '다시 검사하기' 버튼 표시
+                }
+                else {
+                    sendResponse(); // 그렇지 않은 경우, 일반 응답을 처리하는 함수 호출
+                }
+            }
+            sendButton.addEventListener('click', handleSendButtonClick);
+            
+
+            // 보내기 버튼 클릭 이벤트 리스너
+            sendButton.addEventListener('click', sendName);
+            sendButton.addEventListener('click', sendResponse);
+
+            // 엔터 키 이벤트 리스너
+            window.addEventListener('keydown', function (event) {
+                if (event.key === 'Enter') {
+                    event.preventDefault(); // 기본 엔터 키 동작 방지
+                
+                    if ($('#user-name-input').is(':visible')) {
+                        sendName(); // 이름 입력인 경우
+                    }
+                    else if(isAskingUserMBTI && !isAskingUserMBTIpressed){
+                        displayUserMBTIQuestion();
+                    }
+                    else if (isAskingUserMBTI && isAskingUserMBTIpressed){
+                        sendUserMBTIResponse();
+                        document.getElementById('restart-button').style.display = 'block'; // '다시 검사하기' 버튼 표시
+               
+                    }
+                    else {
+                        sendResponse(); // 일반 응답인 경우
+                    }
+                }
+            });
+            
+
+            function handleEnter(event) {
+                if (event.key === 'Enter') {
+                    event.preventDefault(); // 기본 엔터 키 동작 방지
+                    sendResponse(); // 서버로 응답 전송
+                }
+            }
+
+            //document.getElementById('restart-button').style.display = 'block';
+
+
+            
+
+                
+
+            
+
+            
+        });
+
+        
+        
+    </script>
+    
+    
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    
+    
+</body>
+</html>
