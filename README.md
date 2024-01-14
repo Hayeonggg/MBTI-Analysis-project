@@ -23,7 +23,7 @@
 ### Demo
 
 <p align="center">
-  <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/5f58bc29-d409-4abb-ba16-51d755097f56" width="600" height="400"/>
+  <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/5f58bc29-d409-4abb-ba16-51d755097f56" width="600" height="430"/>
 </p>
 </br>
 
@@ -34,7 +34,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/df63c40d-11f4-47f9-acf2-742d1066dcd7"/>
+  <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/df63c40d-11f4-47f9-acf2-742d1066dcd7"width="500" height="350"/>
 </p>
 
 
