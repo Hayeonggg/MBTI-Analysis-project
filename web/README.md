@@ -9,14 +9,13 @@
 ## 설치-수정하기!!</br>
 ```
 git clone https://github.com/aqntks/cv-models
-cd cv-models     
-pip install -r requirements.txt
+cd web    
 ```
 
 </br></br></br>
 ## 실행</br>
 ```
-python web.py
+python flask.py
 ```
 </br></br></br>
 ## 실행 화면</br>
