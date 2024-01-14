@@ -14,23 +14,23 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 mecab = Mecab(dicpath=r"C:/mecab/mecab-ko-dic")
 
 #훈련된 서브워드 토크나이저 모델 불러오기
-saved_path = r'C:/Users/RACS/MBTI_prj_backup/data/m.model'
+saved_path = r'C:/Users/RACS/web/data/m.model'
 sp = spm.SentencePieceProcessor()
 sp.Load(saved_path)#m.model 불러오기
 
 #훈련된 Bi-LSTM모델 불러오기
-EI_model_save_path = r'C:/Users/RACS/MBTI_prj_backup/data/TrainedModel/EI_best_model.h5'
+EI_model_save_path = r'C:/Users/RACS/web/data/TrainedModel/EI_best_model.h5'
 EI_loaded_model = tf.keras.models.load_model(EI_model_save_path)
-NS_model_save_path = r'C:/Users/RACS/MBTI_prj_backup/data/TrainedModel/NS_best_model.h5'
+NS_model_save_path = r'C:/Users/RACS/web/data/TrainedModel/NS_best_model.h5'
 NS_loaded_model = tf.keras.models.load_model(NS_model_save_path)
-FT_model_save_path = r'C:/Users/RACS/MBTI_prj_backup/data/TrainedModel/FT_best_model.h5'
+FT_model_save_path = r'C:/Users/RACS/web/data/TrainedModel/FT_best_model.h5'
 FT_loaded_model = tf.keras.models.load_model(FT_model_save_path)
-JP_model_save_path = r'C:/Users/RACS/MBTI_prj_backup/data/TrainedModel/JP_best_model.h5'
+JP_model_save_path = r'C:/Users/RACS/web/data/TrainedModel/JP_best_model.h5'
 JP_loaded_model = tf.keras.models.load_model(JP_model_save_path)
 
 
 #사전에 입력된 질문 불러오기
-question = pd.read_csv(r'C:/Users/RACS/MBTI_prj_backup/data/total_question.csv')
+question = pd.read_csv(r'C:/Users/RACS/web/data/total_question.csv')
 
 
 ################################################################
