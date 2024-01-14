@@ -21,10 +21,11 @@
 </br>
 
 #### Demo
+
 <p align="center">
   <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/5f58bc29-d409-4abb-ba16-51d755097f56" width="600" height="400"/>
 </p>
-</br></br>
+</br>
 
 
 ####  SYSTEM ARCHITECTURE & DEVELOPMENT ENVIRONMENT (임시)
@@ -37,7 +38,8 @@
 </p>
 
 
-</br></br>
+</br></br></br>
+___
 
 1. 데이터 수집 - 데이터 증강</br>
 2. 모델학습(5가지 모델 제안, 택 1)
