@@ -7,8 +7,10 @@
 <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/c8dc0bb6-4789-4b4a-a349-16acb55b89c2" width="600" height="280"/>
 </p>
 <p align="center">
-<img src="https://github.com/Ryuhamaa/MBTI-Analysis-project/assets/90309728/d7979810-35c7-4e08-a5c8-8b374c463f1a" width="600" height="200"/>
+<img src="https://github.com/Ryuhamaa/MBTI-Analysis-project/assets/90309728/11b04feb-f2ae-42b8-a662-51b16083e19a" width="600" height="280"/>
 </p>
+![ㄹㄹㄹㄹㄹㄹㄹ](https://github.com/Ryuhamaa/MBTI-Analysis-project/assets/90309728/11b04feb-f2ae-42b8-a662-51b16083e19a)
+
 
 ### OVERVIEW
 본 작품은 자연어 처리(NLP)를 기반으로 하여 인간의 심리적 특성을 16가지 성격 유형으로 분류하는 **MBTI 검사**의 **새로운 지표를 제시한다.** </br>
