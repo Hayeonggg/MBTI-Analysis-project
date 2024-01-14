@@ -15,8 +15,12 @@
 - 적은 양의 데이터 셋으로도 높은 예측 정확도를 보임
 
 ___
+>
 
+<p align="center">
 <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/c8dc0bb6-4789-4b4a-a349-16acb55b89c2" width="600" height="280"/>
+</p>
+  
 </br></br>
 
 1. 데이터 수집 - 데이터 증강</br>
