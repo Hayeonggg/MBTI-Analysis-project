@@ -7,7 +7,7 @@
 <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/c8dc0bb6-4789-4b4a-a349-16acb55b89c2" width="600" height="280"/>
 </p>
 <p align="center">
-<img src="https://github.com/Ryuhamaa/MBTI-Analysis-project/assets/90309728/d7979810-35c7-4e08-a5c8-8b374c463f1a" width="600" height="100"/>
+<img src="https://github.com/Ryuhamaa/MBTI-Analysis-project/assets/90309728/d7979810-35c7-4e08-a5c8-8b374c463f1a" width="600" height="200"/>
 </p>
 
 ### OVERVIEW
