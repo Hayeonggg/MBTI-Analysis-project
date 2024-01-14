@@ -1,6 +1,8 @@
 # 딥러닝 아키텍처를 활용한 자연어 응답기반 MBTI 분석
 ## Natural Language Response-Based MBTI Analysis
-`졸업작품으로 2023년 11월 제작된 프로젝트입니다.`
+`졸업작품으로 2023년 제작된 1인 프로젝트입니다.`
+프로젝트 기간 : 2023.08 ~ 2023.11
+
 </br>
 
 <p align="center">
