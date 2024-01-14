@@ -22,12 +22,20 @@
 
 #### Demo
 <p align="center">
-  <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/5f58bc29-d409-4abb-ba16-51d755097f56" width="600" height="280"/>
+  <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/5f58bc29-d409-4abb-ba16-51d755097f56" width="600" height="400"/>
 </p>
 </br></br>
 
 
 ####  SYSTEM ARCHITECTURE & DEVELOPMENT ENVIRONMENT (임시)
+<p align="center">
+  <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/0006f94c-3951-459c-b259-df5bc9b5b692 width="600" height="280"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/bbeac387-ace8-4feb-bef9-b94dae815183 width="600" height="280"/>
+</p>
+
 <p align="center">
   <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/b7f6e8a1-39a2-4e8f-b472-79bdc2ec0e78" width="600" height="280"/>
 </p>
