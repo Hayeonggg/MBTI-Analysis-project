@@ -20,7 +20,7 @@
 
 </br>
 
-#### Demo
+### Demo
 
 <p align="center">
   <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/5f58bc29-d409-4abb-ba16-51d755097f56" width="600" height="400"/>
@@ -28,7 +28,7 @@
 </br>
 
 
-####  SYSTEM ARCHITECTURE & DEVELOPMENT ENVIRONMENT (임시)
+###  SYSTEM ARCHITECTURE & DEVELOPMENT ENVIRONMENT (임시)
 <p align="center">
   <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/f8e94add-7095-432e-92a1-1e9e4a5bd849"/>
 </p>
