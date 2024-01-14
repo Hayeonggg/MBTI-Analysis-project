@@ -22,7 +22,7 @@
 
 </br>
 
-### Demo
+### DEMO
 
 <p align="center">
   <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/5f58bc29-d409-4abb-ba16-51d755097f56" width="600" height="430"/>
