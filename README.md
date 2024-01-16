@@ -25,7 +25,7 @@
 ### DEMO
 
 <p align="center">
-  <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/5f58bc29-d409-4abb-ba16-51d755097f56" width="600" height="430"/>
+  <img src="https://github.com/Ryuhamaa/MBTI-Analysis-project/assets/90309728/075810f0-ec34-4990-8f20-a8eb2c9fa234" width="600" height="430"/>
 </p>
 </br>
 
