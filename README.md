@@ -41,9 +41,8 @@ Velog Link >> https://velog.io/@bluebarry3/%EC%A1%B8%EC%9E%91-%EC%A3%BC%EC%A0%9C
 </br>
 
 <p align="center">
-  <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/df63c40d-11f4-47f9-acf2-742d1066dcd7"width="550" height="320"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/f064acb4-c126-4908-b3cd-e1008fe829d2"width="550" height="320"/>
 </p>
-
 
 </br></br></br>
 ___
@@ -57,7 +56,7 @@ ___
 
 
 
-
+</br></br></br>
 
 
 
