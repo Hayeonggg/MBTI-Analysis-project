@@ -60,15 +60,15 @@ ___
 
 ### 1. Data Collection / 2. Data Augmentation
 <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/d5974d62-c119-4cb1-9c2d-fc36c29fa337"width="550" height="320"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/d5974d62-c119-4cb1-9c2d-fc36c29fa337"width="700" height="320"/>
 </p>
 
 
 <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/4bada387-cd2d-4f95-9c9d-ce49b4a84a47"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/4bada387-cd2d-4f95-9c9d-ce49b4a84a47"width="600" height="320"/>
 </p>
 <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/723ac19d-00f6-4e31-b377-9f2f783970d6"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/723ac19d-00f6-4e31-b377-9f2f783970d6"width="600" height="320"/>
 </p>
 
 </br></br>
