@@ -61,9 +61,8 @@ ___
 ### 1. Data Collection / 2. Data Augmentation
 ![그림1](https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/66a89d18-c258-4151-a68a-28b5be97ce07)
 
-<p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/d16a8399-2b0d-4b27-900c-03b80a421aec"/>
-</p>
+<img width="557" alt="20240214133238" src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/0feb2478-1808-48bd-ad5d-5b443e06939e">
+
 <p align="center">
   <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/3e9196c0-c335-4024-bd40-d0b848464203"/>
 </p>
