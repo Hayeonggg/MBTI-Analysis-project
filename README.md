@@ -46,28 +46,13 @@ Velog Link >> https://velog.io/@bluebarry3/%EC%A1%B8%EC%9E%91-%EC%A3%BC%EC%A0%9C
 
 </br></br></br>
 ___
+
 ### DEVELOPMENT SEQUENCE
 1. Data Collection (gpt4, kogpt-2.5 생성 이용)
 2. Data Augmentation [(Github Link)](https://github.com/Hayeonggg/Easy-Data-Augmentation-Techniques) 
-3. 5가지 모델 제안 및 최종선정 모델 소개 - 논문
-5. MBTI 예측하기.py
+3. 5가지 모델 제안 및 최종선정 모델 소개 - [Reference](https://github.com/Hayeonggg/MBTI-Analysis-project/blob/main/YouHaYeong-LSTM-Personality-Analysis-2023/2023%EB%85%84%20%EC%9C%B5%EB%B3%B5%ED%95%A9%EC%A7%80%EC%8B%9D%ED%95%99%ED%9A%8C%20%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%20%EB%85%BC%EB%AC%B8%EC%A7%91%20-%20%EC%9C%A0%ED%95%98%EC%98%81.pdf) [Poster](https://github.com/Hayeonggg/MBTI-Analysis-project/tree/main/YouHaYeong-LSTM-Personality-Analysis-2023)
+5. MBTI 예측 방법
 6. web 구현
-
-데이터 수집
-폴더명: data_collection / 데이터_수집
-내용: koGPT-2를 사용하여 데이터를 수집하는 코랩 파일들
-
-수집된 데이터
-폴더명: collected_data / 수집된_데이터
-내용: 수집된 데이터를 저장하는 엑셀 파일들
-
-제안된 모델
-폴더명: proposed_models / 제안된_모델
-내용: 5가지 제안된 모델에 해당하는 코랩 파일들
-
-답변 예측 코드
-폴더명: answer_prediction / 답변_예측_코드
-내용: 답변을 예측하는 데 사용되는 코랩 파일
 
 
 
