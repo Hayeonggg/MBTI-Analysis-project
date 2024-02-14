@@ -59,6 +59,9 @@ ___
 ___
 
 ### 1. Data Collection / 2. Data Augmentation
+<p align="center">
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/d5974d62-c119-4cb1-9c2d-fc36c29fa337"/>
+</p>
 
 
 <p align="center">
