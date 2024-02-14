@@ -60,12 +60,12 @@ ___
 
 ### 1. Data Collection / 2. Data Augmentation
 <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/d5974d62-c119-4cb1-9c2d-fc36c29fa337"width="700" height="320"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/d5974d62-c119-4cb1-9c2d-fc36c29fa337"width="850" height="320"/>
 </p>
 
 
 <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/4bada387-cd2d-4f95-9c9d-ce49b4a84a47"width="600" height="320"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/4bada387-cd2d-4f95-9c9d-ce49b4a84a47"width="400" height="250"/>
 </p>
 <p align="center">
   <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/723ac19d-00f6-4e31-b377-9f2f783970d6"width="600" height="320"/>
@@ -76,13 +76,13 @@ ___
 ### 3. 5가지 모델 제안 및 최종선정 모델
 ### * 실험방법
 <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/9a13d761-38ef-4659-b7b2-abd871f31db3"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/9a13d761-38ef-4659-b7b2-abd871f31db3"width="700" height="320"/>
 </p>
 <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/614c8cdf-c690-42d0-ab65-4a80830c9569"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/614c8cdf-c690-42d0-ab65-4a80830c9569"width="700" height="320"/>
 </p>
 <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/870336b3-68f1-46fa-a7ca-6b53899c8c76"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/870336b3-68f1-46fa-a7ca-6b53899c8c76"width="700" height="320"/>
 </p>
 
 </br>
