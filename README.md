@@ -21,7 +21,8 @@
 - 적은 양의 데이터 셋으로도 높은 예측 정확도를 보임
 
 ### PROJECT INTRODUCTION
- https://velog.io/@bluebarry3/%EC%A1%B8%EC%9E%91-%EC%A3%BC%EC%A0%9C%EB%B0%9C%ED%91%9C
+Velog Link >> https://velog.io/@bluebarry3/%EC%A1%B8%EC%9E%91-%EC%A3%BC%EC%A0%9C%EB%B0%9C%ED%91%9C
+
 </br>
 
 ### DEMO
@@ -47,9 +48,8 @@
 ___
 ### DEVELOPMENT SEQUENCE
 1. Data Collection (gpt4, kogpt-2.5 생성 이용)
-2. Data Augmentation [(Click the Link)](https://github.com/Hayeonggg/Easy-Data-Augmentation-Techniques) 
-3. 5가지 제안 모델 - 논문 링크 [(Click the Link)](file:///C:/Users/RACS/Desktop/[%EC%9C%A0%ED%95%98%EC%98%81]2023%EB%85%84%20%EC%9C%B5%EB%B3%B5%ED%95%A9%EC%A7%80%EC%8B%9D%ED%95%99%ED%9A%8C%20%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%20%EB%85%BC%EB%AC%B8%EC%A7%91.pdf) 
-4. / 최종선정 모델 소개
+2. Data Augmentation [(Github Link)](https://github.com/Hayeonggg/Easy-Data-Augmentation-Techniques) 
+3. 5가지 모델 제안 및 최종선정 모델 소개 - 논문
 5. MBTI 예측하기.py
 6. web 구현
 
