@@ -59,40 +59,63 @@ ___
 ___
 
 ### 1. Data Collection / 2. Data Augmentation
-![그림1](https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/66a89d18-c258-4151-a68a-28b5be97ce07)
-
 <img width="557" alt="20240214133238" src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/0feb2478-1808-48bd-ad5d-5b443e06939e">
 
 <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/3e9196c0-c335-4024-bd40-d0b848464203"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/4bada387-cd2d-4f95-9c9d-ce49b4a84a47"/>
 </p>
+<p align="center">
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/723ac19d-00f6-4e31-b377-9f2f783970d6"/>
+</p>
+
 </br>
 
 ### 3. 5가지 모델 제안 및 최종선정 모델
 * 실험방법
-<img width="608" alt="20240214132621" src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/9a13d761-38ef-4659-b7b2-abd871f31db3">
-<img width="607" alt="20240214132605" src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/614c8cdf-c690-42d0-ab65-4a80830c9569">
-<img width="622" alt="20240214132332" src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/870336b3-68f1-46fa-a7ca-6b53899c8c76">
+<p align="center">
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/9a13d761-38ef-4659-b7b2-abd871f31db3"/>
+</p>
+<p align="center">
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/614c8cdf-c690-42d0-ab65-4a80830c9569"/>
+</p>
+<p align="center">
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/870336b3-68f1-46fa-a7ca-6b53899c8c76"/>
+</p>
+
 </br>
 
 * 실험결과
-<img width="580" alt="20240214132636" src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/0edc628e-c8cc-4dcb-a784-36e2f2276019">
-<img width="570" alt="20240214132427" src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/d6415699-afac-4ff7-ac3e-45d5df2d92b3">
+* <p align="center">
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/0edc628e-c8cc-4dcb-a784-36e2f2276019"/>
+</p>
+<p align="center">
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/d6415699-afac-4ff7-ac3e-45d5df2d92b3"/>
+</p>
 
 
 ### 4. MBTI 예측 방법 `추후 개선 예정`
-<img width="549" alt="20240214132826" src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/196767a1-5800-44d8-a5bb-cfabc587063d">
-<img width="611" alt="20240214132839" src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/9be1f1c0-c66f-4ae4-92c4-2477cb06cd1a">
+<p align="center">
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/196767a1-5800-44d8-a5bb-cfabc587063d"/>
+</p>
+<p align="center">
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/9be1f1c0-c66f-4ae4-92c4-2477cb06cd1a"/>
+</p>
 
 * '사용자 응답 기반 MBTI 예측' 결과
-<img width="407" alt="20240214132921" src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/ed2acc0b-c4ad-4843-b992-71e67a8f9341">
-<img width="454" alt="20240214132927" src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/23f22ab3-ad14-4dbb-933f-21c04266ecda">
+  <p align="center">
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/ed2acc0b-c4ad-4843-b992-71e67a8f9341"/>
+</p>
+<p align="center">
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/23f22ab3-ad14-4dbb-933f-21c04266ecda"/>
+</p>
 
 
 
 ### 5. web 구현(local)
 - Flask 이용
-![그림3](https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/5c350419-1e8b-4361-a70a-94f73a1dc430)
+<p align="center">
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/5c350419-1e8b-4361-a70a-94f73a1dc43"/>
+</p>
 
 
 </br></br></br>
