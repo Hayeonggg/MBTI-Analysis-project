@@ -25,8 +25,9 @@
 Velog Link >> https://velog.io/@bluebarry3/%EC%A1%B8%EC%9E%91-%EC%A3%BC%EC%A0%9C%EB%B0%9C%ED%91%9C
 
 </br>
+___
 
-### DEMO
+### ▶ DEMO
 
 <p align="center">
   <img src="https://github.com/Ryuhamaa/MBTI-Analysis-project/assets/90309728/075810f0-ec34-4990-8f20-a8eb2c9fa234" width="600" height="430"/>
@@ -34,7 +35,7 @@ Velog Link >> https://velog.io/@bluebarry3/%EC%A1%B8%EC%9E%91-%EC%A3%BC%EC%A0%9C
 </br>
 
 
-###  SYSTEM ARCHITECTURE
+### ▶ SYSTEM ARCHITECTURE
 <p align="center">
   <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/f8e94add-7095-432e-92a1-1e9e4a5bd849"/>
 </p>
@@ -44,10 +45,10 @@ Velog Link >> https://velog.io/@bluebarry3/%EC%A1%B8%EC%9E%91-%EC%A3%BC%EC%A0%9C
   <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/f064acb4-c126-4908-b3cd-e1008fe829d2"width="550" height="320"/>
 </p>
 
-</br></br></br>
+</br></br></br></br>
 ___
 
-## DEVELOPMENT SEQUENCE
+## ▶ DEVELOPMENT SEQUENCE
 1. Data Collection (gpt4, kogpt-2.5 생성 이용)
 2. Data Augmentation [(Github Link)](https://github.com/Hayeonggg/Easy-Data-Augmentation-Techniques) 
 3. 5가지 모델 제안 및 최종선정 모델 - [Reference](https://github.com/Hayeonggg/LSTM-Personality-Analysis-2023/blob/main/2023%EB%85%84%20%EC%9C%B5%EB%B3%B5%ED%95%A9%EC%A7%80%EC%8B%9D%ED%95%99%ED%9A%8C%20%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%20%EB%85%BC%EB%AC%B8%EC%A7%91%20-%20%EC%9C%A0%ED%95%98%EC%98%81.pdf) / [Poster](https://github.com/Hayeonggg/LSTM-Personality-Analysis-2023/blob/main/2023%20%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%20%ED%8F%AC%EC%8A%A4%ED%84%B0%20-%20%EC%9C%A0%ED%95%98%EC%98%81.pdf)
@@ -56,8 +57,7 @@ ___
 
 ___
 
-### 1. Data Collection
-### 2. Data Augmentation
+### 1. Data Collection / 2. Data Augmentation
 ![그림1](https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/66a89d18-c258-4151-a68a-28b5be97ce07)
 
 <p align="center">
