@@ -20,6 +20,8 @@
 - Pre-trained Model(KoGPT-2, GPT-4)을 활용한 Data Augmentation
 - 적은 양의 데이터 셋으로도 높은 예측 정확도를 보임
 
+### PROJECT INTRODUCTION
+ https://velog.io/@bluebarry3/%EC%A1%B8%EC%9E%91-%EC%A3%BC%EC%A0%9C%EB%B0%9C%ED%91%9C
 </br>
 
 ### DEMO
@@ -30,11 +32,12 @@
 </br>
 
 
-###  SYSTEM ARCHITECTURE & DEVELOPMENT ENVIRONMENT (임시)
+###  SYSTEM ARCHITECTURE
 <p align="center">
   <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/f8e94add-7095-432e-92a1-1e9e4a5bd849"/>
 </p>
 </br>
+
 <p align="center">
   <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/df63c40d-11f4-47f9-acf2-742d1066dcd7"width="550" height="320"/>
 </p>
@@ -42,12 +45,13 @@
 
 </br></br></br>
 ___
-
-1. Data (데이터 수집방법 gpt-2.5)
-2. Data Augmentation (외부 깃허브 링크)
-3. 5가지 제안 모델 - 논문 링크 / 최종선정 모델 소개
-4. MBTI 예측하기.py
-5. web 구현
+### DEVELOPMENT SEQUENCE
+1. Data Collection (gpt4, kogpt-2.5 생성 이용)
+2. Data Augmentation [(Click the Link)](https://github.com/Hayeonggg/Easy-Data-Augmentation-Techniques) 
+3. 5가지 제안 모델 - 논문 링크 [(Click the Link)](file:///C:/Users/RACS/Desktop/[%EC%9C%A0%ED%95%98%EC%98%81]2023%EB%85%84%20%EC%9C%B5%EB%B3%B5%ED%95%A9%EC%A7%80%EC%8B%9D%ED%95%99%ED%9A%8C%20%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%20%EB%85%BC%EB%AC%B8%EC%A7%91.pdf) 
+4. / 최종선정 모델 소개
+5. MBTI 예측하기.py
+6. web 구현
 
 데이터 수집
 폴더명: data_collection / 데이터_수집
