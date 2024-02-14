@@ -79,7 +79,7 @@ ___
 ### 3. 5가지 모델 제안 및 최종선정 모델
 ### >> 실험방법
 <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/9a13d761-38ef-4659-b7b2-abd871f31db3"width="680" height="320"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/9a13d761-38ef-4659-b7b2-abd871f31db3"width="680" height="300"/>
 </p>
 <p align="center">
   <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/614c8cdf-c690-42d0-ab65-4a80830c9569"width="680" height="320"/>
@@ -111,7 +111,7 @@ ___
 
 ### >> '사용자 응답 기반 MBTI 예측' 결과
   <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/ed2acc0b-c4ad-4843-b992-71e67a8f9341"width="500" height="300"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/ed2acc0b-c4ad-4843-b992-71e67a8f9341"width="500" height="460"/>
 </p>
 <p align="center">
   <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/23f22ab3-ad14-4dbb-933f-21c04266ecda"width="500" height="300"/>
