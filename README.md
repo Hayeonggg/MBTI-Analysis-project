@@ -103,15 +103,15 @@ ___
 ### 4. MBTI 예측 방법 --> `(추후 개선 예정)`
 ### >> MBTI 예측 방법 구조화
 <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/196767a1-5800-44d8-a5bb-cfabc587063d"width="650" height="400"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/196767a1-5800-44d8-a5bb-cfabc587063d"width="700" height="350"/>
 </p>
 <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/9be1f1c0-c66f-4ae4-92c4-2477cb06cd1a"width="650" height="400"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/9be1f1c0-c66f-4ae4-92c4-2477cb06cd1a"width="700" height="350"/>
 </p>
 
 ### >> '사용자 응답 기반 MBTI 예측' 결과
   <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/ed2acc0b-c4ad-4843-b992-71e67a8f9341"width="500" height="460"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/ed2acc0b-c4ad-4843-b992-71e67a8f9341"width="500" height="440"/>
 </p>
 <p align="center">
   <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/23f22ab3-ad14-4dbb-933f-21c04266ecda"width="500" height="300"/>
