@@ -103,7 +103,7 @@ ___
 ### 4. MBTI 예측 방법 --> `(추후 개선 예정)`
 ### >> MBTI 예측 방법 구조화
 <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/196767a1-5800-44d8-a5bb-cfabc587063d"width="500" height="200"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/196767a1-5800-44d8-a5bb-cfabc587063d"width="500" height="230"/>
 </p>
 <p align="center">
   <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/9be1f1c0-c66f-4ae4-92c4-2477cb06cd1a"width="500" height="180"/>
