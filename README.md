@@ -102,18 +102,18 @@ ___
 
 ### 4. MBTI 예측 방법 `추후 개선 예정`
 <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/196767a1-5800-44d8-a5bb-cfabc587063d"width="700" height="320"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/196767a1-5800-44d8-a5bb-cfabc587063d"width="600" height="320"/>
 </p>
 <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/9be1f1c0-c66f-4ae4-92c4-2477cb06cd1a"width="700" height="320"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/9be1f1c0-c66f-4ae4-92c4-2477cb06cd1a"width="600" height="320"/>
 </p>
 
 ### >> '사용자 응답 기반 MBTI 예측' 결과
   <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/ed2acc0b-c4ad-4843-b992-71e67a8f9341"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/ed2acc0b-c4ad-4843-b992-71e67a8f9341"width="600" height="320"/>
 </p>
 <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/23f22ab3-ad14-4dbb-933f-21c04266ecda"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/23f22ab3-ad14-4dbb-933f-21c04266ecda"width="600" height="320"/>
 </p>
 
 </br></br>
@@ -121,8 +121,7 @@ ___
 ### 5. web 구현(local)
 - Flask 이용
 <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/5c350419-1e8b-4361-a70a-94f73a1dc43"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/a8ea3b93-fda2-42f7-a5ad-3e8c6dc16641"/>
 </p>
-
 
 </br></br></br>
