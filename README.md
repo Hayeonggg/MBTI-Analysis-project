@@ -2,6 +2,7 @@
 ## Natural Language Response-Based MBTI Analysis
 `졸업작품으로 2023년 제작된 1인 프로젝트입니다.`
 - 프로젝트 기간 : 2023.08 ~ 2023.11 (약 4달)</br>
+- (추후, 예측방법 개선 및 트랜스포머 모델로 변형 예정)
 
 </br>
 
