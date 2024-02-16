@@ -122,5 +122,12 @@ ___
 <p align="center">
   <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/a8ea3b93-fda2-42f7-a5ad-3e8c6dc16641"/>
 </p>
+<p align="center">
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/f79f5af8-7a26-4b2c-8d99-36d7190bc439"width="80%" height="80%"/>
+</p>
+
+
+
+  
 
 </br></br></br>
