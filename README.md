@@ -38,7 +38,7 @@ ___
 
 ### ▶ SYSTEM ARCHITECTURE
 <p align="center">
-  <img src="https://github.com/Ryuhamaa/MBTI-PRJ/assets/90309728/f8e94add-7095-432e-92a1-1e9e4a5bd849"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/1808b140-fb17-4278-bc97-d258f982def3"/>
 </p>
 </br>
 
