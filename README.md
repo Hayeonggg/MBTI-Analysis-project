@@ -43,7 +43,7 @@ ___
 </br>
 
 <p align="center">
-  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/f064acb4-c126-4908-b3cd-e1008fe829d2"width="550" height="320"/>
+  <img src="https://github.com/Hayeonggg/MBTI-Analysis-project/assets/90309728/b70297fd-8d88-4bac-a623-cbb53e629b76"width="550" height="320"/>
 </p>
 
 </br></br></br></br>
